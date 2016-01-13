@@ -206,7 +206,7 @@ a.control_next {
         <!--<label class="control-label visible-ie8 visible-ie9">Username</label>-->
         <div class="controls">
           <div class="input-icon left">
-            <i class=""><img src="images/user-icon.png" alt=""></i>
+            <i class=""><img src="images/user-icon.png" class="usic" alt=""></i>
             <input class="input_text" type="text" autocomplete="off" placeholder="Username" name="username" id="username">
           </div>
         </div>
@@ -217,7 +217,7 @@ a.control_next {
         <!--<label class="control-label visible-ie8 visible-ie9">Password</label>-->
         <div class="controls">
           <div class="input-icon left">
-            <i class="icon-lock"><img src="images/pass-icon.png" alt=""></i>
+            <i class="icon-lock"><img src="images/pass-icon.png" class="paic" alt=""></i>
             <input class="input_text" type="password" autocomplete="off" placeholder="********" name="password" id="password">
           </div>
         </div>
@@ -7322,10 +7322,11 @@ $(document).on('pageshow', '#pagedesign_completed', function(){
     </div>
 </div>
 
+<br>
+<br>
 
 
-
-<div class="ui-grid-b" style="background-color:#fff !important;border-radius:3px;">
+<div class="ui-grid-b radmov" style="background-color:#fff !important;border-radius:3px; ">
 <div class="ui-block-a" style="    margin-left: 3%; 
     width: 30%;">  
   <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
@@ -7342,7 +7343,7 @@ $(document).on('pageshow', '#pagedesign_completed', function(){
   <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
                            
                             <input type="radio" name="radio-choice-a" id="radio-choice-bb" value="Verified">
-                            <label for="radio-choice-bb">Verified</label>
+                            <label for="radio-choice-bb">Verified-True</label>
                            
                         </fieldset>
 
@@ -7354,7 +7355,7 @@ $(document).on('pageshow', '#pagedesign_completed', function(){
                           
                            
                             <input type="radio" name="radio-choice-a" id="radio-choice-cb" value="Notverified">
-                            <label for="radio-choice-cb">Notverified</label>
+                            <label for="radio-choice-cb">Verified-False</label>
                          
                         </fieldset>
 </div>
@@ -7366,10 +7367,12 @@ $(document).on('pageshow', '#pagedesign_completed', function(){
 <br>
 <div class="verinot">
     <label for="textarea2b">Final Comments :<span style="color: rgb(246, 16, 63);"></span></label>
-<textarea cols="40" rows="8" name="remarkg" id="remarkg" placeholder="" class="ui-input-text ui-shadow-inset ui-body-inherit ui-corner-all ui-textinput-autogrow" style="height: 28px !important;width: 96%;
+<textarea cols="40" rows="8" name="remarkg" id="remarkg" placeholder="" class="ui-input-text ui-shadow-inset ui-body-inherit ui-corner-all ui-textinput-autogrow fincom" style="width: 96%;
     margin: 0px auto;
     border: 1px solid rgb(204, 204, 204);"></textarea>
 </div>
+<br>
+
  <div class="ui-grid-solo sss" style="background-color:#54566B !important; padding:0px !important; color:#fff !important;    margin: 0.7em !important; tfont-weight:400;">
 <div class="ui-block-a">
 <a href="#" class="ui-btn ui-corner-all ui-shadow" id="chatSendButton" style="background-color:#54566B !important;color:#fff !important;">Update Activity</a>

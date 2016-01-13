@@ -656,3 +656,86 @@ sup {
   margin-left: -10px;
 }
 
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+.ui-input-text input, .ui-input-search input {
+  min-height: 55px !important;
+}
+/*.ui-input-text input, .ui-input-search input,
+textarea.ui-input-text.ui-textinput-autogrow {
+	font-size: 30px;
+    font-weight: 200;
+	border-radius: 0px;
+	border: 0px solid #ffffff;
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	line-height: 16px;
+}*/
+.ui-input-text input, .ui-input-search input, textarea.ui-input-text.ui-textinput-autogrow {
+    font-size: 20px;
+    font-weight: 200;
+    border-radius: 0px;
+    border: 0px solid #ffffff;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    line-height: 16px;
+}
+.input-icon.left input {
+    padding-left: 120px !important;
+    padding-top: 25px;
+}
+.paic{
+	width: 50px !important;
+    margin-top: 15px !important;
+}
+.usic{
+	width: 50px !important;
+}
+.upload_box_2 {
+    width: 80% !important;
+    background: #fff;
+    height: 86px;
+    border-radius: 6px !important;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    -o-border-radius: 5px !important;
+}
+div.upload {
+    width: 80px !important;
+    height: 80px !important;
+    background: url(../images/primary/check-in.png);
+    /* background-color: red; */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.msg_mid_bg {
+    position: relative;
+    background: rgb(76, 205, 211) !important;
+    border-radius: 6px;
+    float: left;
+    width: 93% !important;
+    margin-top: 0;
+    font-size: 20px;
+    padding: 4px 7px 5px 5px;
+    color: #fff;
+    text-align: justify;
+}
+.radmov{
+margin-left: 85px !important;
+}
+.ui-mobile label, .ui-controlgroup-label, .ui-controlgroup-label legend {
+    font-size: 20px;
+    font-weight: 400;
+    color: #696969;
+    margin-bottom: 0px;
+}
+.fincom{
+	    width: 96%;
+    margin: 0px auto;
+    border: 1px solid rgb(204, 204, 204);
+    height: 53px !important;
+}
+}
