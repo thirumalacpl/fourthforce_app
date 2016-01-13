@@ -84,6 +84,8 @@ integrity_lifestyle_permanent_array =  JSON.parse(sessionStorage.getItem("integr
 servant_education_array =  JSON.parse(sessionStorage.getItem("servant_education_array"));
 //alert(inprogressArray_array);
 
+coordinator_final_comment_array =  JSON.parse(sessionStorage.getItem("coordinator_final_comment_array"));
+
 var inpro_veri=inprogressArray_array;
 
 
@@ -118,7 +120,7 @@ if( typeof sup_inprogress !== 'undefined'){
 /*education*/
 if(qualification_id == '1' || qualification_id == '2' || qualification_id == '3' || qualification_id == '4' || qualification_id == '5' || qualification_id == '6'){
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/education-icon.png" class="li_imgs"><h2 class="li_h2">'+inpro_obj.name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><span class="li_span">'+inpro_obj.qualification_name+'</span><b class="li_b">11/2/2015</b></a></li>'
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/education-icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/education-icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 
@@ -126,14 +128,14 @@ $('#lis_align_inpro').append(lis);
 if(qualification_id == '7' || qualification_id == '8' || qualification_id == '9' || qualification_id == '10' || qualification_id == '11'){
 //alert('employment list');
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/employment-new.png" class="li_imgs"><h2 class="li_h2">'+inpro_obj.name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><span class="li_span">'+inpro_obj.qualification_name+'</span><b class="li_b">11/2/2015</b></a></li>'
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/employment-new.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/employment-new.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 }
 
 if(qualification_id == '12' || qualification_id == '13' || qualification_id == '14' || qualification_id == '15'){
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/id-icon.png" class="li_imgs"><h2 class="li_h2">'+inpro_obj.name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><span class="li_span">'+inpro_obj.qualification_name+'</span><b class="li_b">11/2/2015</b></a></li>'
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/id-icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/id-icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 }
@@ -147,7 +149,7 @@ $('#lis_align_inpro').append(lis);
 
 if(qualification_id == '63' ){
   
-  var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/asset-verification.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+  var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/asset-verification.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 }
@@ -157,7 +159,7 @@ $('#lis_align_inpro').append(lis);
 /*address*/
 if(qualification_id == '29' || qualification_id == '31' ){
   //alert('address');
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/address-icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/address-icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 
@@ -166,7 +168,7 @@ $('#lis_align_inpro').append(lis);
 /*reference*/
 if(qualification_id == '32' || qualification_id == '33' || qualification_id == '34' || qualification_id == '35' ){
   //alert('referencre');
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/REFFERENCE-ICON.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/REFFERENCE-ICON.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 }
@@ -183,7 +185,7 @@ $('#lis_align_inpro').append(lis);
 /*distributor details*/
 if(qualification_id == '41' ){
   //alert('distributor details');
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/Distributor-icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/Distributor-icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 
@@ -192,7 +194,7 @@ $('#lis_align_inpro').append(lis);
 /*address details*/
 if(qualification_id == '42' || qualification_id == '46' || qualification_id == '44' || qualification_id == '48' || qualification_id == '30' || qualification_id == '40' || qualification_id == '70' || qualification_id == '84' ){
  //alert('common web ware supplier');
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/address-icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/address-icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 
@@ -201,7 +203,7 @@ $('#lis_align_inpro').append(lis);
 /*web verification of antecedents*/
 if(qualification_id == '43' ){
  // alert('web verification');
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/web-verification_icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/web-verification_icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 
@@ -209,7 +211,7 @@ $('#lis_align_inpro').append(lis);
 /*supplier vendor details*/
 if(qualification_id == '47' ){
  // alert('supplier vendor');
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/supplier-verification-icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/supplier-verification-icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 
@@ -217,7 +219,7 @@ $('#lis_align_inpro').append(lis);
 /*ware house leasing*/
 if(qualification_id == '45' ){
   //alert('ware housing');
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/Warehouseverification_icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/Warehouseverification_icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 
@@ -226,7 +228,7 @@ $('#lis_align_inpro').append(lis);
 /*bank*/
 if(qualification_id == '64' ){
  // alert('bank 64');
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/BANK.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/BANK.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 
@@ -235,7 +237,7 @@ $('#lis_align_inpro').append(lis);
 /*driving licence*/
 if(qualification_id == '56' ){
   //alert('driving licence 56');
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/DrivingLicence-verification_icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/DrivingLicence-verification_icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 
@@ -244,7 +246,7 @@ $('#lis_align_inpro').append(lis);
 /*identity */
 if(qualification_id == '65' ){
   //alert('identity 65');
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/identity-icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/identity-icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 
@@ -252,7 +254,7 @@ $('#lis_align_inpro').append(lis);
 /*credential */
 if(qualification_id == '39' ){
   //alert('credential  39');
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/Credential-icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/Credential-icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 
@@ -260,7 +262,7 @@ $('#lis_align_inpro').append(lis);
 /*bankrupcy */
 if(qualification_id == '66' ){
   //alert('bankrupcy 66');
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/bankkruptcy-icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/bankkruptcy-icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 
@@ -269,7 +271,7 @@ $('#lis_align_inpro').append(lis);
 /*professional licence*/
 if(qualification_id == '69' ){
   //alert('professional licence 69');
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/Proffessinoal-icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/Proffessinoal-icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 
@@ -278,7 +280,7 @@ $('#lis_align_inpro').append(lis);
 /* 6verifi */
 /* servant  */
 if(qualification_id == '49' || qualification_id == '50' || qualification_id == '51' || qualification_id == '77' || qualification_id == '78' || qualification_id == '79'){
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/servant.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/servant.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 
@@ -286,7 +288,7 @@ $('#lis_align_inpro').append(lis);
 /* servant education qualification 2*/
 if(qualification_id == '80' ){
  
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/servant.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/servant.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 
@@ -294,7 +296,7 @@ $('#lis_align_inpro').append(lis);
 /* education salary 1*/
 if(qualification_id == '75' ){
  
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/education-&-salary.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/education-&-salary.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 
@@ -302,7 +304,7 @@ $('#lis_align_inpro').append(lis);
 /* education salary 2*/
 if(qualification_id == '76' ){
  
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/education-&-salary.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/education-&-salary.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 
@@ -310,7 +312,7 @@ $('#lis_align_inpro').append(lis);
 /* criminal 1*/
 if(qualification_id == '71' || qualification_id == '72' || qualification_id == '73' || qualification_id == '74' ){
  
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/criminal.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/criminal.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 
@@ -318,7 +320,7 @@ $('#lis_align_inpro').append(lis);
 /* employmnet gap 1 and criminal 2-->74*/
 if(qualification_id == '81' || qualification_id == '82' || qualification_id == '83'  ){
  
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/employment-gap.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/employment-gap.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 
@@ -326,7 +328,7 @@ $('#lis_align_inpro').append(lis);
 /* delinquent 1*/
 if(qualification_id == '89' || qualification_id == '90' || qualification_id == '91' || qualification_id == '92' || qualification_id == '93'){
  
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/delinquent.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/delinquent.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 
@@ -334,7 +336,7 @@ $('#lis_align_inpro').append(lis);
 /* integrity & lifestyle 1*/
 if(qualification_id == '85' ){
  
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/Proffessinoal-icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/Proffessinoal-icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 
@@ -342,7 +344,7 @@ $('#lis_align_inpro').append(lis);
 /* integrity & life style 2*/
 if(qualification_id == '86' || qualification_id == '87' || qualification_id == '88' ){
  
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/Proffessinoal-icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/Proffessinoal-icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 
@@ -350,7 +352,7 @@ $('#lis_align_inpro').append(lis);
 /* security*/
 if(qualification_id == '94'  ){
  
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/Proffessinoal-icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextinprogress('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/Proffessinoal-icon.png" class="li_imgs_1"><h2 class="li_h2">'+inpro_obj.First_Name+''+inpro_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+inpro_obj.verification_for+'</p><p class="li_p">'+inpro_obj.taskname+'</p><p class="li_p">'+inpro_obj.qualification_name+'</p><p class="li_p listrejectcolor">'+inpro_obj.subco_status+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+inpro_obj.verification_user_id+'</b></a></li>'
 
 $('#lis_align_inpro').append(lis);
 
@@ -470,6 +472,20 @@ if(loggg == ''){
 }
 }
 
+ for(a=0;a<coordinator_final_comment_array.length;a++){
+reject_rep = coordinator_final_comment_array[a];
+
+  super_inpro_obj = inprogressArray_array[index];
+  hj =reject_rep.verification_id;
+  huemploy=reject_rep.type;
+//alert(h+'hh');
+gj =super_inpro_obj.verification_user_id;
+//alert(hj+'gg'+gj+''+huemploy+'qualification_id'+qualification_id);
+if( hj == gj && huemploy == qualification_id){
+  reject_repa = coordinator_final_comment_array[a];
+//alert(employment_obja_inpod.user_id+'employment_records_array'+gj);
+}
+}
 
 /*servant education 80 75*/
 if(qualification_id == '80' ){
@@ -965,6 +981,7 @@ var log_inpro_objg=log_inpro_objg;
 var address_inpro_obja=address_inpro_obja;
 var employment_obja_inpod=employment_obja_inpod;
 var eductional_inpro_objay=eductional_inpro_objay;
+var reject_repa=reject_repa;
 /*var education_array= JSON.parse(sessionStorage.getItem("education_array"));
 var address_array=JSON.parse(sessionStorage.getItem("address_array"));
 var employment_array=JSON.parse(sessionStorage.getItem("employment_array"));
@@ -982,6 +999,11 @@ sessionStorage.setItem("supervisor_activity_log_array",JSON.stringify(log_inpro_
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+  if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("currentobj_educational_inpro",JSON.stringify(eductional_inpro_objay));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 //sessionStorage.setItem("looog",JSON.stringify(image_obj_logd));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 //sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));
@@ -1004,6 +1026,11 @@ sessionStorage.setItem("currentobja_addressid_inpro",JSON.stringify(address_inpr
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+  if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("currentobja_addressid_inpro",JSON.stringify(address_inpro_obja));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 //sessionStorage.setItem("looog",JSON.stringify(image_obj_logd));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 //sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));
@@ -1027,7 +1054,11 @@ sessionStorage.setItem("currentobj_employment_records_inpo",JSON.stringify(emplo
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
-
+  if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("currentobj_employment_records_inpo",JSON.stringify(employment_obja_inpod));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 sessionStorage.setItem("currentobj_employment_records_inpo",JSON.stringify(employment_obja_inpod));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
@@ -1048,6 +1079,11 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+  if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("referencea",JSON.stringify(referencea));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 sessionStorage.setItem("referencea",JSON.stringify(referencea));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
@@ -1065,6 +1101,11 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+  if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("address_veriia",JSON.stringify(address_veriia));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 sessionStorage.setItem("address_veriia",JSON.stringify(address_veriia));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
@@ -1083,6 +1124,11 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+  if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("bank_inpro",JSON.stringify(bank_inproa));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 //alert('currentob bank succes');
 sessionStorage.setItem("bank_inpro",JSON.stringify(bank_inproa));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
@@ -1101,6 +1147,11 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+  if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("assest_inpro",JSON.stringify(assest_inproa));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 //alert('currentob assest succes');
 sessionStorage.setItem("assest_inpro",JSON.stringify(assest_inproa));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
@@ -1119,6 +1170,11 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+  if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("distr_residentiala",JSON.stringify(distr_residentiala));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 //alert('currentob bank succes');
 sessionStorage.setItem("distr_residentiala",JSON.stringify(distr_residentiala));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
@@ -1138,6 +1194,11 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+  if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("dist_detailsa",JSON.stringify(dist_detailsa));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 //alert('currentob bank succes');
 sessionStorage.setItem("dist_detailsa",JSON.stringify(dist_detailsa));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
@@ -1157,6 +1218,11 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+  if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("web_veria",JSON.stringify(web_veria));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 //alert('currentob bank succes');
 sessionStorage.setItem("web_veria",JSON.stringify(web_veria));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
@@ -1175,6 +1241,11 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+  if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("supplier_venda",JSON.stringify(supplier_venda));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 //alert('currentob bank succes');
 sessionStorage.setItem("supplier_venda",JSON.stringify(supplier_venda));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
@@ -1193,6 +1264,11 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+ if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("ware_housa",JSON.stringify(ware_housa));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 //alert('currentob bank succes');
 sessionStorage.setItem("ware_housa",JSON.stringify(ware_housa));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
@@ -1211,6 +1287,11 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+  if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("common_addressa",JSON.stringify(common_addressa));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 //alert('currentob bank succes');
 sessionStorage.setItem("common_addressa",JSON.stringify(common_addressa));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
@@ -1229,6 +1310,11 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+ if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("driving_lica",JSON.stringify(driving_lica));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 //alert('currentob bank succes');
 sessionStorage.setItem("driving_lica",JSON.stringify(driving_lica));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
@@ -1247,6 +1333,11 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+ if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("credential_deta",JSON.stringify(credential_deta));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 //alert('currentob bank succes');
 sessionStorage.setItem("credential_deta",JSON.stringify(credential_deta));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
@@ -1265,6 +1356,11 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+ if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("identity_deta",JSON.stringify(identity_deta));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 //alert('currentob bank succes');
 sessionStorage.setItem("identity_deta",JSON.stringify(identity_deta));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
@@ -1283,6 +1379,11 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+ if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("professional_deta",JSON.stringify(professional_deta));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 //alert('currentob bank succes');
 sessionStorage.setItem("professional_deta",JSON.stringify(professional_deta));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
@@ -1301,6 +1402,11 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+ if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("bankruptcy_deta",JSON.stringify(bankruptcy_deta));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 //alert('currentob bank succes');
 sessionStorage.setItem("bankruptcy_deta",JSON.stringify(bankruptcy_deta));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
@@ -1320,6 +1426,11 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+ if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("servant_veria",JSON.stringify(servant_veria));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 //alert('currentob bank succes');
 sessionStorage.setItem("servant_veria",JSON.stringify(servant_veria));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
@@ -1339,6 +1450,11 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+ if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("criminal_veria",JSON.stringify(criminal_veria));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 //alert('currentob bank succes');
 sessionStorage.setItem("criminal_veria",JSON.stringify(criminal_veria));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
@@ -1358,6 +1474,11 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+ if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("employgap_veria",JSON.stringify(employgap_veria));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 //alert('currentob bank succes');
 sessionStorage.setItem("employgap_veria",JSON.stringify(employgap_veria));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
@@ -1376,6 +1497,11 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+ if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("integrity_lifestylea",JSON.stringify(integrity_lifestylea));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 //alert('currentob bank succes');
 sessionStorage.setItem("integrity_lifestylea",JSON.stringify(integrity_lifestylea));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
@@ -1395,6 +1521,11 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+ if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("delinquent_veria",JSON.stringify(delinquent_veria));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 //alert('currentob bank succes');
 sessionStorage.setItem("delinquent_veria",JSON.stringify(delinquent_veria));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
@@ -1414,6 +1545,11 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+ if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("edusalary_offa",JSON.stringify(edusalary_offa));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 //alert('currentob bank succes');
 sessionStorage.setItem("edusalary_offa",JSON.stringify(edusalary_offa));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
@@ -1433,6 +1569,11 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+ if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("edusalary_edua",JSON.stringify(edusalary_edua));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 //alert('currentob bank succes');
 sessionStorage.setItem("edusalary_edua",JSON.stringify(edusalary_edua));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
@@ -1452,6 +1593,11 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+ if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("integrity_lifestyle_pera",JSON.stringify(integrity_lifestyle_pera));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 //alert('currentob bank succes');
 sessionStorage.setItem("integrity_lifestyle_pera",JSON.stringify(integrity_lifestyle_pera));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
@@ -1471,6 +1617,11 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+ if(reject_repa !== undefined ){
+  sessionStorage.setItem("reject_repa",JSON.stringify(reject_repa)); 
+sessionStorage.setItem("servant_educa",JSON.stringify(servant_educa));
+sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
+    }
 //alert('currentob bank succes');
 sessionStorage.setItem("servant_educa",JSON.stringify(servant_educa));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
