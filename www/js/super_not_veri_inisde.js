@@ -1398,7 +1398,7 @@ $(document).off('click', '#inprogress').on('click', '#inprogress', function() {
   var remark=document.getElementById('remark').value;
 //alert(region_num);
 
-$.ajax({url: "http://fourthforce.in/verify/slim-fourth/supervisor_status_to_inprogress.php?status_val="+status_val+"&verification_user_id="+verification_user_id+"&remark="+remark+"&qualification_id="+qualification_id+"&region_num="+region_num,
+$.ajax({url: "http://fourthforce.in/verify/slim-four/supervisor_status_to_inprogress.php?status_val="+status_val+"&verification_user_id="+verification_user_id+"&remark="+remark+"&qualification_id="+qualification_id+"&region_num="+region_num,
   data:$('#update_to_inprogress').serialize(),
   type: 'post',                   
   async: 'true',

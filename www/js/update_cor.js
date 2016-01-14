@@ -249,7 +249,7 @@ var formData = $("#callAjaxFormcor").serialize();
 
 $.ajax({
   type: "POST",
-  url: "http://fourthforce.in/verify/slim-fourth/chat_cor.php?loginistant="+loginistant+"&verification_user_id="+verification_user_id+"&qualification_id="+qualification_id,
+  url: "http://fourthforce.in/verify/slim-four/chat_cor.php?loginistant="+loginistant+"&verification_user_id="+verification_user_id+"&qualification_id="+qualification_id,
 
   data: formData,
   success: onSuccess,

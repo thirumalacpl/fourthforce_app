@@ -186,10 +186,10 @@ $('#chatr').append(chatr);
 
 $(document).off('click', '#before_new_listupa').on('click', '#before_new_listupa', function() {
 //alert(region_num+'refresh');
-//$.ajax({url: 'http://fourthforce.in/verify/slim-fourth/dashinprogress.php?region='+region+"&user_id="+user_id,
+//$.ajax({url: 'http://fourthforce.in/verify/slim-four/dashinprogress.php?region='+region+"&user_id="+user_id,
 //alert(region);
 //alert(user_id);
-$.ajax({url: 'http://fourthforce.in/verify/slim-fourth/count.php?region='+region+"&user_id="+user_id,
+$.ajax({url: 'http://fourthforce.in/verify/slim-four/count.php?region='+region+"&user_id="+user_id,
   data:$('#new').serialize(),
   type: 'post',                   
   async: 'true',
@@ -324,7 +324,7 @@ var formData = $("#callAjaxForm").serialize();
 
 $.ajax({
   type: "POST",
-  url: "http://fourthforce.in/verify/slim-fourth/chat.php?loginistant="+loginistant+"&verification_user_id="+verification_user_id+"&coordinator_id="+coordinator_id+"&status_val_inpro="+status_val_inpro+"&sdocument="+sdocument+"&remarkg="+remarkg+"&qualification_id="+qualification_id,
+  url: "http://fourthforce.in/verify/slim-four/chat.php?loginistant="+loginistant+"&verification_user_id="+verification_user_id+"&coordinator_id="+coordinator_id+"&status_val_inpro="+status_val_inpro+"&sdocument="+sdocument+"&remarkg="+remarkg+"&qualification_id="+qualification_id,
 
   data: formData,
   success: onSuccess,
@@ -347,7 +347,7 @@ document.getElementById('remarkg').value = "";
   //$("input[type='radio']:first").attr("checked", "checked");
 //alert(region);
 //alert(user_id);
-$.ajax({url: 'http://fourthforce.in/verify/slim-fourth/count.php?region='+region+"&user_id="+user_id,
+$.ajax({url: 'http://fourthforce.in/verify/slim-four/count.php?region='+region+"&user_id="+user_id,
   data:$('#update_to_inprogressw').serialize(),
   type: 'post',                   
   async: 'true',

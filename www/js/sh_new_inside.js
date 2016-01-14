@@ -1674,7 +1674,7 @@ if(x == 'New'){
 }
 
 if(x !== 'New'){
-$.ajax({url: "http://fourthforce.in/verify/slim-fourth/insertbut.php?name="+name+"&verification_user_id="+verification_user_id+"&verification_for="+verification_for+"&current_address="+current_address+"&location="+location+"&state="+state+"&qualification_name="+qualification_name+"&task_name="+task_name+"&type="+type,
+$.ajax({url: "http://fourthforce.in/verify/slim-four/insertbut.php?name="+name+"&verification_user_id="+verification_user_id+"&verification_for="+verification_for+"&current_address="+current_address+"&location="+location+"&state="+state+"&qualification_name="+qualification_name+"&task_name="+task_name+"&type="+type,
     data:$('#update_to_hari').serialize(),
     type: 'post',                   
     async: 'true',
@@ -1753,7 +1753,7 @@ var formData = $("#update_to_hari").serialize();
 
 $.ajax({
   type: "POST",
-  url: "http://fourthforce.in/verify/slim-fourth/insertbut.php?name="+name+"&verification_user_id="+verification_user_id+"&verification_for="+verification_for+"&current_address="+current_address+"&location="+location+"&state="+state+"&qualification_name="+qualification_name+"&task_name="+task_name+"&type="+type,
+  url: "http://fourthforce.in/verify/slim-four/insertbut.php?name="+name+"&verification_user_id="+verification_user_id+"&verification_for="+verification_for+"&current_address="+current_address+"&location="+location+"&state="+state+"&qualification_name="+qualification_name+"&task_name="+task_name+"&type="+type,
 
   data: formData,
   success: onSuccess,

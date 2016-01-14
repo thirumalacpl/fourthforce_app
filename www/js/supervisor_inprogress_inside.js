@@ -6,7 +6,7 @@ $('.sddq').empty();
 $('#sda_newin').empty();
 $('#lii_newin').empty();
 $('.proof').show();
-
+  $('.reportr').hide();
 $('#logapp').empty();
 $('.document_imag_inprooneqa').empty();
 $('.document_imag_inprooneqb').empty();
@@ -1237,7 +1237,7 @@ var sdocument=$('input[type=file]').val().split('\\').pop();
 //alert(sdocument);
 
 
-$.ajax({url: "http://fourthforce.in/verify/slim-fourth/supervisor_status_to_verified.php?status_val_inpro="+status_val_inpro+"&verification_user_id="+verification_user_id+"&remark_inpro="+remark_inpro+"&coordinator_id="+coordinator_id+"&region_num="+region_num+"&activity_log="+activity_log+"&sdocument="+sdocument,
+$.ajax({url: "http://fourthforce.in/verify/slim-four/supervisor_status_to_verified.php?status_val_inpro="+status_val_inpro+"&verification_user_id="+verification_user_id+"&remark_inpro="+remark_inpro+"&coordinator_id="+coordinator_id+"&region_num="+region_num+"&activity_log="+activity_log+"&sdocument="+sdocument,
   data:$('#update_to_verified_inpro').serialize(),
   type: 'post',                   
   async: 'true',

@@ -1309,7 +1309,7 @@ var accept = document.getElementById("waiting_approve").value;
 alert(accept);
 document.getElementById('waiting_approve').value = "";
 
-$.ajax({url: "http://fourthforce.in/verify/slim-fourth/accept_or_reject.php?accept="+accept+"&verification_user_id="+verification_user_id+"&qualification_id="+qualification_id+"&region="+region,
+$.ajax({url: "http://fourthforce.in/verify/slim-four/accept_or_reject.php?accept="+accept+"&verification_user_id="+verification_user_id+"&qualification_id="+qualification_id+"&region="+region,
     data:$('#accept_or_reject').serialize(),
     type: 'post',                   
     async: 'true',
@@ -1358,7 +1358,7 @@ alert('hadsjf');
 var reject = document.getElementById("waiting_approve").value;
 alert(reject);
 document.getElementById('waiting_approve').value = "";
-$.ajax({url: "http://fourthforce.in/verify/slim-fourth/reject_sh.php?reject="+reject+"&verification_user_id="+verification_user_id+"&qualification_id="+qualification_id+"&region="+region,
+$.ajax({url: "http://fourthforce.in/verify/slim-four/reject_sh.php?reject="+reject+"&verification_user_id="+verification_user_id+"&qualification_id="+qualification_id+"&region="+region,
     data:$('#accept_or_reject').serialize(),
     type: 'post',                   
     async: 'true',

@@ -28,7 +28,7 @@ if(sessionStorage.getItem("logged_in")=="2"){
 $(document).off('click', '#submit').on('click', '#submit', function() { 
     if($('#username').val().length > 0 && $('#password').val().length > 0){
         console.log($('#check-watchuser').serialize());
-        $.ajax({url: 'http://fourthforce.in/verify/slim-fourth/index.php',
+        $.ajax({url: 'http://fourthforce.in/verify/slim-four/index.php',
             data:$('#check-watchuser').serialize(),
             type: 'post',                   
             async: 'true',

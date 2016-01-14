@@ -123,7 +123,7 @@ $(document).off('click', '#sh_new_verification').on('click', '#sh_new_verificati
 
 //alert(region+'region new sh');
 
-$.ajax({url: "http://fourthforce.in/verify/slim-fourth/dash_sh_new.php?region="+region+"&regionsection="+regionsection+"&state="+state,
+$.ajax({url: "http://fourthforce.in/verify/slim-four/dash_sh_new.php?region="+region+"&regionsection="+regionsection+"&state="+state,
     data:$('#e').serialize(),
     type: 'post',                   
     async: 'true',
@@ -197,7 +197,7 @@ $(document).off('click', '#inprogress_sh').on('click', '#inprogress_sh', functio
 //alert(region+'region inprogress_sh');
 //alert(regionsection+'region inprogress_sh');
 
-$.ajax({url: "http://fourthforce.in/verify/slim-fourth/dash_sh_inprogress.php?region="+region+"&regionsection="+regionsection+"&state="+state,
+$.ajax({url: "http://fourthforce.in/verify/slim-four/dash_sh_inprogress.php?region="+region+"&regionsection="+regionsection+"&state="+state,
     data:$('#e').serialize(),
     type: 'post',                   
     async: 'true',
@@ -269,7 +269,7 @@ $.ajax({url: "http://fourthforce.in/verify/slim-fourth/dash_sh_inprogress.php?re
 //alert('tobeapproved');
 //alert(region+'region tobeapproved');
 
-$.ajax({url: "http://fourthforce.in/verify/slim-fourth/dash_tobeapproved_sh.php?region="+region+"&regionsection="+regionsection+"&state="+state,
+$.ajax({url: "http://fourthforce.in/verify/slim-four/dash_tobeapproved_sh.php?region="+region+"&regionsection="+regionsection+"&state="+state,
     data:$('#ee').serialize(),
     type: 'post',                   
     async: 'true',
@@ -340,7 +340,7 @@ $.ajax({url: "http://fourthforce.in/verify/slim-fourth/dash_tobeapproved_sh.php?
 //alert('completed');
 //alert(region+'region completed_sh');
 
-$.ajax({url: "http://fourthforce.in/verify/slim-fourth/dash_completed_sh.php?region="+region+"&regionsection="+regionsection+"&state="+state,
+$.ajax({url: "http://fourthforce.in/verify/slim-four/dash_completed_sh.php?region="+region+"&regionsection="+regionsection+"&state="+state,
     data:$('#ee').serialize(),
     type: 'post',                   
     async: 'true',
@@ -400,7 +400,7 @@ $.ajax({url: "http://fourthforce.in/verify/slim-fourth/dash_completed_sh.php?reg
 //alert('completed');
 //alert(region+'region completed_sh');
 
-$.ajax({url: "http://fourthforce.in/verify/slim-fourth/dash_reject_sh.php?region="+region+"&regionsection="+regionsection+"&state="+state,
+$.ajax({url: "http://fourthforce.in/verify/slim-four/dash_reject_sh.php?region="+region+"&regionsection="+regionsection+"&state="+state,
     data:$('#ee').serialize(),
     type: 'post',                   
     async: 'true',
@@ -471,7 +471,7 @@ $.ajax({url: "http://fourthforce.in/verify/slim-fourth/dash_reject_sh.php?region
 //alert('waiting');
 //alert(region+'region waiting_sh');
 
-$.ajax({url: "http://fourthforce.in/verify/slim-fourth/dash_waiting_sh.php?region="+region+"&regionsection="+regionsection+"&state="+state,
+$.ajax({url: "http://fourthforce.in/verify/slim-four/dash_waiting_sh.php?region="+region+"&regionsection="+regionsection+"&state="+state,
     data:$('#ee').serialize(),
     type: 'post',                   
     async: 'true',
@@ -540,7 +540,7 @@ $.ajax({url: "http://fourthforce.in/verify/slim-fourth/dash_waiting_sh.php?regio
 //alert('completed');
 //alert(region+'region completed_sh');
 
-$.ajax({url: "http://fourthforce.in/verify/slim-fourth/dash-verified-false.php?region="+region+"&regionsection="+regionsection+"&state="+state,
+$.ajax({url: "http://fourthforce.in/verify/slim-four/dash-verified-false.php?region="+region+"&regionsection="+regionsection+"&state="+state,
     data:$('#ee').serialize(),
     type: 'post',                   
     async: 'true',
@@ -609,7 +609,7 @@ $(document).off('click', '#veri-false-sh-new-new').on('click', '#veri-false-sh-n
 
 //alert(region+'region new sh');
 
-$.ajax({url: "http://fourthforce.in/verify/slim-fourth/dash_sh_new_verified_false.php?region="+region+"&regionsection="+regionsection+"&state="+state,
+$.ajax({url: "http://fourthforce.in/verify/slim-four/dash_sh_new_verified_false.php?region="+region+"&regionsection="+regionsection+"&state="+state,
     data:$('#e').serialize(),
     type: 'post',                   
     async: 'true',

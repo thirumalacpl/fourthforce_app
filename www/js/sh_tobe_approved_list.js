@@ -400,7 +400,7 @@ function shtobeapprovedlist(index){
   qualification_id =super_obj.type;
   user_ida=super_obj.verification_user_id;
 
-/*$.ajax({url: "http://fourthforce.in/verify/slim-fourth/commentsboth.php?user_ida="+user_ida+"&qualification_id="+qualification_id,
+/*$.ajax({url: "http://fourthforce.in/verify/slim-four/commentsboth.php?user_ida="+user_ida+"&qualification_id="+qualification_id,
   data:$('#update_to_inprogresss').serialize(),
   type: 'post',                   
   async: 'true',
