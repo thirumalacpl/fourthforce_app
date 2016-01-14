@@ -134,7 +134,7 @@ edusalary_edua = JSON.parse(sessionStorage.getItem("edusalary_edua"));
 integrity_lifestyle_pera = JSON.parse(sessionStorage.getItem("integrity_lifestyle_pera"));
 servant_educa = JSON.parse(sessionStorage.getItem("servant_educa"));
 
-reject_repa = JSON.parse(sessionStorage.getItem("reject_repa"));
+//reject_repa = JSON.parse(sessionStorage.getItem("reject_repa"));
 
 
 if(region_array == null){
@@ -165,7 +165,7 @@ username=regionArray_array.username;
 //alert(username);
 $("#userlistinso").text(username);
 
-if(reject_repa !== null){
+/*if(reject_repa !== null){
   var verificationid=reject_repa.verification_id;
   var typ=reject_repa.type;
 if(verificationid == verification_user_id && qualification_id == typ ){
@@ -176,8 +176,8 @@ if(verificationid == verification_user_id && qualification_id == typ ){
 $('.reportr').text('State Head Report:'+reject_repa.comment);
 
 }
-//$("#rejectreport").text(reject_repac);
-}
+
+}*/
 
 if(qualification_id == '85' ){
  // alert('76 education salary inside');

@@ -84,7 +84,7 @@ integrity_lifestyle_permanent_array =  JSON.parse(sessionStorage.getItem("integr
 servant_education_array =  JSON.parse(sessionStorage.getItem("servant_education_array"));
 //alert(inprogressArray_array);
 
-coordinator_final_comment_array =  JSON.parse(sessionStorage.getItem("coordinator_final_comment_array"));
+//coordinator_final_comment_array =  JSON.parse(sessionStorage.getItem("coordinator_final_comment_array"));
 
 var inpro_veri=inprogressArray_array;
 
@@ -472,7 +472,7 @@ if(loggg == ''){
 }
 }
 
- for(a=0;a<coordinator_final_comment_array.length;a++){
+/* for(a=0;a<coordinator_final_comment_array.length;a++){
 reject_rep = coordinator_final_comment_array[a];
 
   super_inpro_obj = inprogressArray_array[index];
@@ -485,7 +485,7 @@ if( hj == gj && huemploy == qualification_id){
   reject_repa = coordinator_final_comment_array[a];
 //alert(employment_obja_inpod.user_id+'employment_records_array'+gj);
 }
-}
+}*/
 
 /*servant education 80 75*/
 if(qualification_id == '80' ){
